@@ -11,33 +11,36 @@
   </head>
   <body>
     <!-- logo epicode -->
+
     <header>
       <img src="/assets/img/logo.svg" alt="logo-epicode" width="200px" />
-      <h1>Epicode - il blog dei developers</h1>
+      <p>Epicode - il blog dei developers</p>
     </header>
+
     <!-- Menu di navigazione -->
+
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Articoli</a></li>
         <li><a href="#">Lavora con noi</a></li>
       </ul>
+      <hr />
     </nav>
     <main>
       <!--inizio post  -->
-      <section>
+
+      <article>
         <div>
-          <h3>
-            Come creare un template per i post di Mario Rossi - pubblicato il
-            25-10-2020
-          </h3>
+          <h1>Come creare un template per i post</h1>
+          <p>di Mario Rossi - pubblicato il 25-10-2020</p>
           <p>
             La prima cosa da fare è suddividere in blocchi logici la pagina,
             identificando le parti comuni da applicare a tutte le pagine
           </p>
           <div>
+            <p>Le varie aree saranno quindi suddivise in:</p>
             <ul>
-              <span>Le varie aree saranno quindi suddivise in:</span>
               <li>Contenuti di intestazione del tag&lt;header&gt;</li>
               <li>
                 Contenuti centrali variabili del tag&lt;main&gt; (corpo
@@ -72,104 +75,107 @@
             raggiungere la diffusione pressochè totale.
           </p>
         </div>
-      </section>
-      <!-- Tabella -->
-      <section>
-        <table border="1px">
-          <thead>
-            <tr>
-              <th colspan="2">Diffusione dei CSS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Anno</td>
-              <td>% di utilizzo</td>
-              <td>Supporto browsers</td>
-            </tr>
-            <tr>
-              <td>2000</td>
-              <td>20%</td>
-              <td>17%</td>
-            </tr>
-            <tr>
-              <td>2002</td>
-              <td>35%</td>
-              <td>22%</td>
-            </tr>
-            <tr>
-              <td>2004</td>
-              <td>45%</td>
-              <td>42%</td>
-            </tr>
-            <tr>
-              <td>2008</td>
-              <td>80%</td>
-              <td>51%</td>
-            </tr>
-            <tr>
-              <td>2012</td>
-              <td>100%</td>
-              <td>76%</td>
-            </tr>
-          </tbody>
-        </table>
-        <span>
-          Un test di validazione potrà essere fatto tramite il
-          <a href="#">tool online</a> dedicato allo scopo. Una volta ottimizzato
-          il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei
-          veri developers come loro:
-        </span>
-        <br />
-        <br />
-        <!-- link al video youtube -->
-        <div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/HKvv2tqECtg?si=gtxPJo4Q4mgZ06sA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <!-- Form neswletter -->
-      <section>
-        <h3>
-          Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
-          nostra nwsletter:
-        </h3>
-        <form>
+        <!-- Tabella -->
+
+        <section>
+          <table border="1px">
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <tr>
+                <th>Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browsers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr></tr>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr>
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td>80%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Un test di validazione potrà essere fatto tramite il
+            <a href="#">tool online</a> dedicato allo scopo. Una volta
+            ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere
+            stati dei veri developers come loro:
+          </p>
+          <!-- link al video youtube -->
+
           <div>
-            <label for="email">Inserisci l'email</label>
-            <input type="email" id="email" placeholder="email" />
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/HKvv2tqECtg?si=gtxPJo4Q4mgZ06sA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div>
-            <label for="button">Iscriviti!</label>
-            <button id="button">INVIA</button>
-          </div>
-        </form>
-      </section>
+        </section>
+        <!-- Form neswletter -->
+
+        <section>
+          <h3>
+            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+            nostra newsletter:
+          </h3>
+          <form>
+            <div>
+              <label for="email">Inserisci l'email</label>
+              <input type="email" id="email" placeholder="email" required />
+            </div>
+            <div>
+              <label for="button">Iscriviti!</label>
+              <button id="button">INVIA</button>
+            </div>
+          </form>
+        </section>
+      </article>
     </main>
     <!-- area correlati -->
+
     <aside>
       <div>
+        <h2>Articoli correlati</h2>
         <p>
-          Articoli correlati<br />
-          Validare il codice HTML<br />
+          <a href="#">Validare il codice HTML</a><br />
           Categoria: develop<br />
           Data: 18-9-2020
         </p>
         <p>
-          Correggere la sintassi<br />
+          <a href="#">Correggere la sintassi</a><br />
           Categoria: develop<br />
           Data: 16-09-2020
         </p>
         <p>
-          Meno Kb nella pagina<br />
+          <a href="#">Meno Kb nella pagina</a><br />
           Categoria: ottimizzazione<br />
           Data: 30-09-2020
         </p>
@@ -177,6 +183,7 @@
       <hr />
     </aside>
     <!-- footer della pagina -->
+
     <footer>
       <div>
         <p>Blog Epicode &copy;2023</p>
